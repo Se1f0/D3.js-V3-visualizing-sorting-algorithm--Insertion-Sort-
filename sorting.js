@@ -1,4 +1,4 @@
-var uArray = [9,3,1,2,4,7];
+var uArray;
 var sArray = [];
 var arr = [];
 var stop = false;
