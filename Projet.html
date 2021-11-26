@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <style>
+        #buttons {
+            margin-left: 40px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        text {
+            fill: black;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+        rect {fill: black;}
+        .unsorted{ fill:red}
+        .sorted {fill: green;}
+        .min {fill: rgb(182, 50, 50);;}
+        .testing {fill: goldenrod;}
+        .sh{
+            border: 1px solid black;
+            background-color: cadetblue;
+            display: flex;   
+            justify-content: center;
+        }
+        
+        #contain{
+            padding: 20px;
+        }
+        
+        #heading{
+            text-align: center;
+        }
+    </style>
+    <script src="assets/d3.v3.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="contain">
+        <p>
+            <h2 id="heading">
+                
+            </h2>
+        </p>
+        <div class="sh"></div>
+        <script src="sorting.js"></script>
+        <div id="buttons">
+            <input type="number" min="1"  max="60" id= "taille" type="text" placeholder="N" size="3">
+            <button id="submit" class="btn-primary btn-default" onclick="submit()">Submit</button>
+            <button class="btn-default " onclick="insertionSort()" >Start</button>
+            <button class="btn-default" onclick="stop = true" style="margin-left:40px">Pause</button>
+            <!-- <button class="btn-default" onclick="stop = false,insertionSort()">Resume</button> -->
+            <button class="btn-default" onclick="reset()">Reset</button>
+            <button class="btn-deafault btn-danger" onClick="window.location.reload();">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
