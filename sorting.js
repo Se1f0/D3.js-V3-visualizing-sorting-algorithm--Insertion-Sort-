@@ -79,7 +79,7 @@ function reset() {
 }
 
 function insertionSort() {
-      
+    document.getElementById("start").disabled = true;
     var value = uArray.shift();
     sArray.push(value);      
     reArrange(sArray.length-1);
