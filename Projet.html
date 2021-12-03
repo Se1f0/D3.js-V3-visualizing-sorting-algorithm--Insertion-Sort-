@@ -47,8 +47,8 @@
         }
     </style>
     <script src="assets/d3.v3.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -62,13 +62,13 @@
         <script src="sorting.js"></script>
         <div id="buttons">
             <input type="number" min="1" max="60" id="taille" type="text" placeholder="N°" size="3">
-            <button id="submit" class="btn-primary btn-default" onclick="submit()">Submit</button>
+            <button id="submit" class="btn btn-primary btn-default" onclick="submit()">Submit</button>
 
-            <button id="start" class="btn-default " onclick="insertionSort()" disabled>Start</button>
-            <button id="pause" class="btn-default" onclick="pause()" disabled>Pause</button>
-            <button id="reset" class="btn-default" onclick="reset()" disabled>Reset</button>
+            <button id="start" class="btn btn-info" onclick="insertionSort()" disabled>Start</button>
+            <button id="pause" class="btn btn-secondary" onclick="pause()" disabled>Pause</button>
+            <button id="reset" class="btn btn-warning" onclick="reset()" disabled>Reset</button>
 
-            <button class="btn-deafault btn-danger" onClick="window.location.reload();">Clear</button>
+            <button class="btn btn-danger" onClick="window.location.reload();">Clear</button>
         </div>
     </div>
 </body>
