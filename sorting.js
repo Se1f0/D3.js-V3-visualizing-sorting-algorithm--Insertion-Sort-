@@ -129,7 +129,6 @@ function insertionSort() {
     function subSort(n) {
         if (stop) return stop = false;
 
-        //d3.selectAll("rect").attr("class", "")                
         d3.select("#rect" + value).attr("class", "testing")
         d3.select("#text" + value).attr("class", "testing")
 
